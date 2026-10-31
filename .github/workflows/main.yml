@@ -1,8 +1,9 @@
 name: Send emails daily
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 22 * * *'
+  # Scheduled sending paused; restore this schedule to resume.
+  # schedule:
+  #   - cron: '0 22 * * *'
 
 jobs:
   calculate-and-send:
